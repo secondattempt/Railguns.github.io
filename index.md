@@ -1,6 +1,5 @@
------------------------------------------------------------- | ------------------------------------------------------------
-[https://secondattempt.github.io/Paul.html] Paul's blogpost  |  [https://secondattempt.github.io/Byron.html] Byron's blogpost
------------------------------------------------------------- | ------------------------------------------------------------
+| [https://secondattempt.github.io/Paul.html] Paul's blogpost  |  [https://secondattempt.github.io/Byron.html] Byron's blogpost |
+| -- | -- |
 
 ## Welcome to GitHub Pages
 
