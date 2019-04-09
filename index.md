@@ -1,4 +1,4 @@
-| [https://secondattempt.github.io/Paul.html] Paul's blogpost  |  [https://secondattempt.github.io/Byron.html] Byron's blogpost |
+|  [Paul's blogpost](https://secondattempt.github.io/Paul.html)  |   [Byron's blogpost](https://secondattempt.github.io/Byron.html) |
 | -- | -- |
 
 ## Welcome to GitHub Pages
