@@ -1,8 +1,8 @@
+------------------------------------------------------------ | ------------------------------------------------------------
+[https://secondattempt.github.io/Paul.html] Paul's blogpost  |  [https://secondattempt.github.io/Byron.html] Byron's blogpost
+------------------------------------------------------------ | ------------------------------------------------------------
+
 ## Welcome to GitHub Pages
-
-|[https://secondattempt.github.io/Paul.html] Paul's blogpost|
-|--|
-
 
 You can use the [editor on GitHub](https://github.com/secondattempt/Railguns.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
