@@ -1,7 +1,6 @@
-<button class="button-save large">|  [Paul's blogpost](https://secondattempt.github.io/Paul.html)  |</button>  [Byron's blogpost](https://secondattempt.github.io/Byron.html) |
-| -- | -- |
+<button class="button-save large">[Paul's blogpost](https://secondattempt.github.io/Paul.html)</button>  <button class="button-save large">[Byron's blogpost](https://secondattempt.github.io/Byron.html)</button>
 
-## Welcome to GitHub Pages
+## Welcome to Rail Guns
 
 You can use the [editor on GitHub](https://github.com/secondattempt/Railguns.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
