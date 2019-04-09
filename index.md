@@ -1,4 +1,4 @@
-|  [Paul's blogpost](https://secondattempt.github.io/Paul.html)  |   [Byron's blogpost](https://secondattempt.github.io/Byron.html) |
+<button class="button-save large">|  [Paul's blogpost](https://secondattempt.github.io/Paul.html)  |</button>  [Byron's blogpost](https://secondattempt.github.io/Byron.html) |
 | -- | -- |
 
 ## Welcome to GitHub Pages
