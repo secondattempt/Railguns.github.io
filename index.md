@@ -2,10 +2,14 @@
 
 ## Welcome to Rail Guns
 
+## Endless. Train. Warfare. (aka USP's)
+
+## Instructions
 
 ## Trailer
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3iUijgEl8gg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Gallery
 
 ### Support or Contact
 
