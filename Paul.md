@@ -19,6 +19,8 @@ And, later on in the project
 
 Upon researching my options, I decided that the best course of action was to make use of Unreal's Splines in order to create sets of individual tracks that can be placed together to form complex railways. Due to the lack of C++ documentation and tutorials on the matter, setting up the tracks took more time than I initially anticipated. The method I settled can be brought down to: breaking down the spline (track) into an array of points, each point containing a transform component (position) and rotation, which are used to give each Train segment the corresponding position and rotation that matches the tracks'. The variable speed of the train is, in other words, the variable size of the spline's array iterator.
 
+![Spline Usage](/Pictures/Paul/SplineComponent.png)
+
 #### Track switching
 
 Using player input, the lead train segment can be given a custom "orientation" ranging between -1 (left) and 1 (right) which dictates what track it will follow upon encountering a track switch. Extra care was taken to implement a "failsafe" system that makes sure that regardless of the orientation, the closest track will be followed (i.e. if the player is trying to go left, but only a middle track is present, then the train will follow the middle track).
