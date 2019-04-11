@@ -23,7 +23,7 @@ Upon researching my options, I decided that the best course of action was to mak
 
 #### Track switching
 
-Using player input, the lead train segment can be given a custom "orientation" ranging between -1 (left) and 1 (right) which dictates what track it will follow upon encountering a track switch. Extra care was taken to implement a "failsafe" system that makes sure that regardless of the orientation, the closest track will be followed (i.e. if the player is trying to go left, but only a middle track is present, then the train will follow the middle track).
+Using player input, the lead train segment can be given a custom "orientation" ranging between -1 (left) and 1 (right) which dictates what track it will follow upon encountering a track switch. Extra care was taken to implement a "failsafe" system that makes sure that regardless of the orientation, the closest track will be followed (i.e. if the player is trying to go left, but only a middle track is present, then the train will follow the middle track). 
 
 #### Composing a train
 
@@ -43,3 +43,41 @@ Inheriting from USceneComponent, the TrackGenerator is a class tasked with maint
 * How do I create the environments?
 * How do I implement the combat tracks e.g. the secondary track for the enemy train?
 * How do I implement the station tracks?
+
+#### Track connections
+
+Each individual track is connected to its neighbours by using the concept of a "linked list" - each track holds a pointer reference to its neighbours.
+
+![Tracks](/Pictures/Paul/LinkedList.png)
+
+#### Track placement
+
+The actual algorithm is fairly straightforward: we organise the world into a "tilemap", where we mark each tile as unvisited. Then, starting from the middle of it, we visit each connected tile, and roll for 3 possible tracks: going right, left, or forward. Then, we mark the respective tiles as visited, and continue doing so until each possible path reaches a dead end or a desired length. 
+
+![Rolls](/Pictures/Paul/RollsYaw.png)
+
+![Track Generator](/Pictures/Paul/TrackGenerator.png)
+
+This is considered a generation phase. Once the train reaches the end of a track that is not connected to anything the trakc generator will begin a new generation phase, whether it is a Combat phase, a Free Roam phase, or a Station.
+
+#### Track layouts
+
+In order to create the environments, a number of 7 tiles we calculated to be needed (based on all possible track layout combinations between middle, left and right tracks).
+
+![Track Layout](/Pictures/Paul/TrackLayout.png)
+
+This functions by getting the corresponding index for each tile preset from a premade array and spawning it in-game.
+
+#### Track rotations
+
+One basic feature of the algorithm is the usage of the rotation (yaw) in order to determine the positions and offsets of the tiles and tracks. However, in order to get accurate results, the yaw value must first be normalized i.e. mapped to a range of 0-360. 
+
+![Normalize Yaw](/Pictures/Paul/NormalizeYaw.png)
+
+Afterwards, the tile and tracks offsets and positions are calculated and are then placed in the required positions in the world space.
+
+### The Conductor
+
+Holds references to the track generator, combat manager, as well as settings for the player input and the options for the train, such as the top speed and its acceleration.
+
+![Conductor](/Pictures/Paul/Conductor.png)
