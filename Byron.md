@@ -6,8 +6,16 @@ For our game, Rail Guns, I was responsible for the implementation the battle sys
 The weapons were meshes that sockets were attached to. A line trace ran from the sockets to a specified range which could be set in editor.
 When the line trace hit an object it would return its type as a hit value. This value would be checked and, if the value was equal to that of a train segment, a timer would start. This timer would take the weapons "" as the amount of time to check and then a "deal damage" function would be run from the train segment which took the weapons "damagePerRound" value and subtracted it from the train segments health.
 
-Once the line trace returned a result it was important to then check if the train segment was still in range. This was achieved by disabling the first line trace and running a new one to the previous hit vector. Once this is done a distance check would be done between the hit vector and the weapon and this would determine how to proceed.
+![In engine variables](/Pictures/Byron/InEngineVars.png)
+
+Once the line trace returned a result it was important to then check if the train segment was still in range. This was achieved by disabling the first line trace and running a new one to the previous hit vector. Once this is done a distance check would be done between the hit vector and the weapon and this would determin how to proceed.
+
+![Line trace in code](/Pictures/Byron/LineTrace.png)
+![Timer and Health functions](/Pictures/Byron/TimerHealth.png)
+
 If the weapon was in range of the train segment the timer would continue and deal damage would run however if they were no longer in range then the weapon would stop the timer running and return to the original line trace, getting the next train segment to attack.
+
+![Distance check in code](/Pictures/Byron/DistanceCheck.png)
 
 This method, while appearing simple, was rather complex to achieve correctly and there were many pitfalls to be aware of. These pitfalls informed the design of the weapon class and the way it connected with other classes.
 Firstly the weapon needed a reference to the train segment, as it needed to be able to check if it was hitting a train segment and if so which one.
