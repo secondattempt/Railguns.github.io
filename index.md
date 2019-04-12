@@ -8,7 +8,7 @@ RailGuns is an endless runner-style game in which the player takes control of a 
 
 The unique selling points of our game include:
 
-* Endless environment to explore, witha  different experience being offered onb each playthrough
+* Endless environment to explore, with a different experience being offered on each playthrough
 * Immersive and fast-paced combat
 
 ## Instructions
