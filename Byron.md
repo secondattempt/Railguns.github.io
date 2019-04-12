@@ -15,6 +15,8 @@ Secondly the train segment needed to know which weapons were attached to it.
 This would, regularly, create a circular dependancy however we were able to avoid this problem with the conductor class.
 The conductor was responsible for handling the trains connectivity with the rest of the game. This meant including the weapons and the train segments in the conductor class did not create a circular dependancy.
 
+![UML of Weapon](/Pictures/Byron/WeaponClassDiagram.png)
+
 In Unreal a conducter was spawned and then the train segments were spawned and parented to the conductor. Similarly the weapons were spawned in engine and then parented to the train segments. This meant that the weapons were attached to the train segments and rode alongside them.
 
 Some consideration was given to how a player would select the train segments and have the weapons fire at other train segments but due to time constraints this did not manage to make it into the game, though some remnents from our efforts can be seen.
