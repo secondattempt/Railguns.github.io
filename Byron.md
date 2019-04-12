@@ -6,8 +6,6 @@ For our game, Rail Guns, I was responsible for the implementation the battle sys
 The weapons were meshes that sockets were attached to. A line trace ran from the sockets to a specified range which could be set in editor.
 When the line trace hit an object it would return its type as a hit value. This value would be checked and, if the value was equal to that of a train segment, a timer would start. This timer would take the weapons "" as the amount of time to check and then a "deal damage" function would be run from the train segment which took the weapons "damagePerRound" value and subtracted it from the train segments health.
 
-![In engine variables](/Pictures/Byron/InEngineVars.png)
-
 Once the line trace returned a result it was important to then check if the train segment was still in range. This was achieved by disabling the first line trace and running a new one to the previous hit vector. Once this is done a distance check would be done between the hit vector and the weapon and this would determin how to proceed.
 
 ![Line trace in code](/Pictures/Byron/LineTrace.png)
