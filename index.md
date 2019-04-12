@@ -24,6 +24,7 @@ The unique selling points of our game include:
 ![Free Roam](/Pictures/Index/FreeRoam.png)
 ![Tiles](/Pictures/Index/Tiles.png)
 ![Combat](/Pictures/Index/Combat.png)
+![Scenic](/Pictures/Index/Scenic.png)
 
 ### Support or Contact
 
